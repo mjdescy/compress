@@ -1,3 +1,10 @@
+mod algorithm;
+mod cli;
+
+use clap::Parser;
+use cli::Args;
+
 fn main() {
-    println!("Compress");
+    let args = Args::parse();
+    println!("{:?}", args);
 }
